@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  transform: translateY(-50%);
+}
+
+.container input {
+  flex: 1;
+  background-color: var(--gray-500);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-right: 8px;
+  border: 0;
+}
+
+.container button {
+  background-color: var(--blue-700);
+  border: 0;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: var(---gray-100);
+  font-weight: bold;
+
+  transition: background-color 0.3s;
+}
+
+.container button:disabled {
+  background-color: var(--blue-900);
+  cursor: not-allowed;
+}
+
+.container button:hover {
+  background-color: var(--blue-500);
+}
+
+.container svg {
+  position: relative;
+  top: -1px;
+}

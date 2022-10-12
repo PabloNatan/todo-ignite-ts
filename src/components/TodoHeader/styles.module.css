@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 3rem;
+}
+
+.container p {
+  font-size: 0.875rem;
+}
+
+.container p:first-child {
+  color: var(--blue-500);
+}
+
+.container p:last-child {
+  color: var(--purple-700);
+}
+
+.container p span {
+  color: var(--gray-100);
+  background-color: var(--gray-300);
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  margin-left: 5px;
+}

@@ -1,0 +1,53 @@
+.container {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+
+  background-color: var(--gray-500);
+  margin-bottom: 0.75rem;
+
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.container button {
+  background-color: transparent;
+  border: 0;
+  align-self: center;
+
+  cursor: pointer;
+  line-height: 0;
+  color: var(--blue-500);
+
+  border-radius: 8px;
+}
+
+button.isCompleted {
+  color: var(--purple-700);
+}
+
+.container p {
+  flex: 1;
+  font-size: 0.875rem;
+  word-break: break-all;
+}
+
+p.isCompleted {
+  text-decoration: line-through;
+}
+
+.container > svg:last-child {
+  color: var(--gray-200);
+  cursor: pointer;
+  align-self: flex-start;
+
+  transition: color 0.2s;
+}
+
+.container > svg:last-child:hover {
+  color: var(--purple-700);
+}

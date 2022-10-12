@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.emptyList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 8px;
+  border-top: 1px solid var(--gray-200);
+
+  padding: 4rem 1.5rem;
+}
+
+.emptyList img {
+  max-width: 56px;
+  margin-bottom: 1rem;
+}
+
+.emptyList p {
+  font-size: 1rem;
+  color: var(--gray-200);
+}
+
+.emptyList p:first-of-type {
+  font-weight: bold;
+}
