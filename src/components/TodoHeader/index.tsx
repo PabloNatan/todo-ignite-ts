@@ -13,7 +13,12 @@ export function TodoHeader({ todosCompleted, total }: TodoHeaderProps) {
       </p>
 
       <p>
-        Concluídas <span>{todosCompleted}</span>
+        Concluídas{" "}
+        <span>
+          {todosCompleted === 0
+            ? todosCompleted
+            : `${todosCompleted} de ${total}`}
+        </span>
       </p>
     </div>
   );
